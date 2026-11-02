@@ -10,9 +10,7 @@ cask "poke-token-bar-team" do
   app "PokeTokenBar.app"
 
   # The app is self-signed and not notarized, so Gatekeeper would block the download.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/PokeTokenBar.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/PokeTokenBar.app"]
   end
 end
