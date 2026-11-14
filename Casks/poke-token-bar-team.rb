@@ -1,6 +1,6 @@
 cask "poke-token-bar-team" do
-  version "2.5.632"
-  sha256 "c2336b91ed21c49f3e681d4b8709a6272673a2f4e13c2bbf20b0a16431888432"
+  version "2.5.633"
+  sha256 "95a56db309cc96b3576121fc81cfedcf92078428469da3ea1a54b648b4b97a4f"
 
   url "https://github.com/likelion-campus/PokeTokenBar/releases/download/v#{version}/PokeTokenBar.zip"
   name "PokeTokenBar Team"
